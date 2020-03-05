@@ -1,0 +1,38 @@
+/* ===== BASE STYLES ===== */
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+/* ===== LAYOUT STYLES ===== */
+
+.flex-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-sub {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* ===== BLOCK STYLES ===== */
+
+.form {
+    padding: 10px;
+}
+
+.form-input {
+    padding: 5px;
+}
+
+.form-input-big {
+    padding: 10px;
+}
