@@ -47,7 +47,6 @@ body * {
 
   .hero {
     margin: auto;
-    width: 30em;
 
     &__header {
         font-size: 350%;
@@ -66,6 +65,84 @@ body * {
 
   .mainvideo {
       margin: 30px;
+  }
+
+  /* SCHOOL INFO */
+
+  .link {
+      font-weight: bold;
+      text-decoration: none;
+  }
+
+  .description {
+    width: 30em;
+    padding: 10px;
+  }
+
+  .grid {
+      margin: 50px;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-row-gap: 20px;
+      grid-template-areas:
+      "cell1 cell1"
+      "cell2 cell3"
+      "cell4 cell5"
+      "cell6 cell6";
+      align-items: center;
+      justify-items: center;
+  }
+
+  @media only screen and (min-width: 787px) {
+    .grid {
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+        grid-template-areas:
+        "cell1 cell1 cell1 cell1"
+        "cell2 cell3 cell4 cell5"
+        "cell6 cell6 cell6 cell6";
+        align-items: center;
+        justify-items: center;
+    }
+  }
+
+  .cell1 {
+      grid-area: cell1;
+  }
+
+  .cell2 {
+      grid-area: cell2;
+  }
+
+  .cell3 {
+      grid-area: cell3;
+  }
+  
+  .cell4 {
+      grid-area: cell4;
+  }
+  
+  .cell5 {
+      grid-area: cell5;
+  }
+
+  .cell6 {
+      grid-area: cell6;
+  }
+
+  .profileimg {
+      width: 70%;
+      margin: 10px;
+  }
+
+  .small-flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
   }
 
   /* FORM */
